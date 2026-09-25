@@ -27,7 +27,7 @@ function setup() {
     iniciarSintetizadores();
     audioIniciado = true;
     btn.style.display = 'none';
-    document.getElementById('status').innerText = "SISTEMA ACTIVO // ANALIZANDO ENTORNO";
+    document.getElementById('status').innerText = "SISTEMA ACTIVO";
   });
 }
 
