@@ -1,14 +1,15 @@
-<!DOCTYPE html]>
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>Gesto</title>
+    <title>Palimpsesto IA - Paisaje Sonoro Espacial</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.49/Tone.js"></script>
+    <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
     <style>
         body { margin: 0; overflow: hidden; background-color: #050505; color: white; font-family: 'Courier New', Courier, monospace; }
-        canvas { display: block; position: absolute; top: 0; left: 0; z-index: 1; opacity: 0.6; mix-blend-mode: screen; }
+        canvas { display: block; position: absolute; top: 0; left: 0; z-index: 1; opacity: 0.8; mix-blend-mode: screen; }
         #ui-layer { position: absolute; z-index: 2; width: 100%; height: 100%; pointer-events: none; display: flex; flex-direction: column; justify-content: center; align-items: center; }
         #start-btn { 
             pointer-events: auto; padding: 15px 30px; font-size: 18px; background: transparent; 
@@ -16,13 +17,13 @@
             text-transform: uppercase; letter-spacing: 2px; transition: all 0.3s ease;
         }
         #start-btn:active { background: #00ffcc; color: #000; }
-        #status { position: absolute; bottom: 20px; left: 20px; font-size: 12px; color: rgba(255,255,255,0.5); }
+        #status { position: absolute; bottom: 20px; left: 20px; font-size: 12px; color: rgba(255,255,255,0.7); }
     </style>
 </head>
 <body>
     <div id="ui-layer">
-        <button id="start-btn">Gesto</button>
-        <div id="status"]Esperando conexión de cámara...</div>
+        <button id="start-btn">gesto</button>
+        <div id="status">Esperando conexión...</div>
     </div>
     <script src="script.js"></script>
 </body>
